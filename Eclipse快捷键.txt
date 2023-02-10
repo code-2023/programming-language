@@ -1,0 +1,7 @@
+删除当前行或者多行快捷键 Ctrl+D
+复制当前行到上一行 Ctrl+Alt+↑
+复制当前行到下一行 Ctrl+Alt+↓
+向左逐渐选中单词 Ctrl+Shift+←
+向右逐渐选中单词 Ctrl+Shift+→
+
+

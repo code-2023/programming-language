@@ -1,0 +1,10 @@
+cristic
+printf
+sizeof
+int
+
+namespace
+struct
+crist
+enum
+str
