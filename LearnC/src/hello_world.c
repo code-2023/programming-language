@@ -14,24 +14,22 @@
  */
 #include <stdio.h>
 #include <stdlib.h>
-#include "grammar.h"
-#include "function.h"
 #include <string.h>
+#include "array.h"
+//#include "base.h"
+#include "pointer.h"
+#include "struct.h"
+//#include "linked_list.h"
 
 int main(void) {
 //	puts("Hello World"); /* prints Hello World */
 //	return EXIT_SUCCESS;
 
-//	int_array();
-//	char_array();
-//	string_array();
-//	char_pointer();
-//	char_pointer_arr();
-//	printf("%I64d\n",sizeof(char));
-//	printf("%I64d\n",sizeof(int));
-//	printf("%I64d",sizeof(int*));
-//	enum_type();
+//	base();
 //	struct_type();
-//	typedef_string();
+	char_pointer();
+	char_pointer_arr();
+//	linked_list();
+
 
 }

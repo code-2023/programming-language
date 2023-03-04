@@ -8,3 +8,8 @@ struct
 crist
 enum
 str
+arr
+ascii
+&p
+&p
+stu

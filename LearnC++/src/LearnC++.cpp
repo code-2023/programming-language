@@ -7,42 +7,26 @@
 //============================================================================
 
 #include <iostream>
+#include "cheader.h"
 using namespace std;
-
-namespace DIY{
-	void hello_world(){
-		//定义字符串变量
-		string str;
-		//定义 int 变量
-		int year;
-		cout<<"Please input an string and int number:\n";
-		//从控制台获取用户输入
-		cin>>str>>year;
-		//将数据输出到控制台
-		cout <<str<<year<< endl;
-		cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
-}
-    class Student{
-    public:
-        char const *name;//常量
-        int age;
-        float score;
-
-    public:
-        void say(){
-            printf("%s的年龄是 %d，成绩是 %f\n", name, age, score);
-        }
-    };
-}
+using namespace DIY;
 
 int main() {
-//	using namespace DIY;
 //	DIY::hello_world();
-	DIY::Student stu;
-	stu.name="cristic white";
-	stu.age=27;
-	stu.score=90;
-	stu.say();
+//	DIY::Student stu;
+//	stu.set_name("cristic white");
+//	stu.set_age(27);
+//	stu.set_score(90);
+//	stu.query();
+
+//	DIY::Student stu("cristic white",27,90);
+//	stu.query();
+
+	char *name=(char*)"cristic white";//ת����������C++�ľ���
+	Student stu(66,name,27,90);
+	Student *p =&stu;
+//	stu.query();
+	p->query();
 	return 0;
 }
 

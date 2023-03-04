@@ -5,10 +5,10 @@
  *      Author: Crist
  */
 
-#ifndef GRAMMAR_H_
-#define GRAMMAR_H_
+#ifndef STRUCT_H_
+#define STRUCT_H_
 
 void enum_type();
 void struct_type();
 
-#endif /* GRAMMAR_H_ */
+#endif /* STRUCT_H_ */
