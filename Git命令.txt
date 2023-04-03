@@ -1,10 +1,10 @@
 上传本地仓库到远程仓库的一般流程
 
 #首次在本机上使用git建立仓库前应生成公私钥(公钥上传到Github)
-ssh-keygen -t rsa -C "cristicwhite@outlook.com"
+ssh-keygen -t rsa -C "your_email@example.com"
 #设置提交代码时的用户信息：
 git config --global user.name "xxx"
-git config --global user.email "xxx@outlook.com"
+git config --global user.email "xxx@example.com"
 #初始化本地仓库
 git init
 #添加当前目录下的所有文件到暂存区：
@@ -23,9 +23,9 @@ git config --global core.quotepath false
 #查看远程仓库信息
 git remote -v
 #拷贝远程仓库到本地
-git clone https://github.com/szsc/graduation-project
+git clone https://github.com/scsz/graduation-project
 #查看某个远程仓库的详细信息
-git remote show  https://github.com/szsc/graduation-project
+git remote show  https://github.com/scsz/graduation-project
 #添加远程仓库地址
 git remote add origin git@github.com:username/repositoryname
 #删除远程仓库地址
