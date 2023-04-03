@@ -20,7 +20,7 @@ git push -u origin master
 --------------------------------------------------------------------------------
 #查看Git的配置信息
 git config --list
-#修改命令行输出显示unicode编码而不显示中文的命令(然后到终端选项文本-locale中更改字符集设置为utf8)
+#解决git命令行输出显示unicode编码的命令(然后到终端选项文本-locale中更改字符集设置为utf8)
 git config --global core.quotepath false
 #查看远程仓库信息
 git remote -v
