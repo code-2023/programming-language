@@ -2,7 +2,7 @@
 
 #首次在本机上使用git建立仓库前应生成公私钥(公钥上传到Github)
 ssh-keygen -t rsa -C "your_email@example.com"
-#配置git使用putty的ssh客户端
+#配置git使用的ssh客户端(以下命令将ssh客户端改为putty)
 git config --global core.sshCommand "plink -agent"
 #设置提交代码时的用户信息：
 git config --global user.name "xxx"
