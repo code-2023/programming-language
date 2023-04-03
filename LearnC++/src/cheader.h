@@ -7,7 +7,10 @@
 
 #ifndef CHEADER_H_
 #define CHEADER_H_
+
+//声明命名空间
 namespace DIY{
+//	声明类
     class Student{
     //私有成员
     private:
@@ -17,12 +20,14 @@ namespace DIY{
         float m_score;
     //公有成员
     public:
+        Student();
         Student(const int max,char *name,int age,float score);
         void set_name(char *name);
         void set_age(int age);
         void set_score(int score);
         void query();
     };
+//	声明函数
     void hello_world();
 }
 

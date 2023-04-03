@@ -9,7 +9,6 @@
 #include "cheader.h"
 using namespace std;
 
-
 /*普通构造方法
 DIY::Student::Student(char *name,int age,float score){
 	 m_name = name;
@@ -18,8 +17,18 @@ DIY::Student::Student(char *name,int age,float score){
 }
 */
 
-//初始化 const 成员变量(非指针变量)的唯一方法就是使用属性初始化的构造方法
+//无参构造方法
+DIY::Student::Student():m_max(77){
+	cout<<"调用无参构造方法创建对象："<<endl;
+	m_name = (char*)"小明";
+	m_age = 22;
+	m_score = 88;
+}
+
+//有参构造方法
+//初始化const 成员变量(非指针变量)必须通过以下格式的构造方法来完成
 DIY::Student::Student(const int max,char *name,int age,float score):m_max(max){
+	cout<<"调用有参构造方法创建对象："<<endl;
 	m_name=name;
 	m_age=age;
 	m_score=score;
@@ -35,18 +44,16 @@ void DIY::Student::set_score(int score){
 	m_score=score;
 }
 void DIY::Student::query(){
-	printf("%s的年龄是%d，成绩是%f, 所在班级最大容量是%d\n", m_name, m_age, m_score,m_max);
+	printf("%s的年龄是%d，成绩是%.2f, 所在班级最大容量是%d\n", m_name, m_age, m_score,m_max);
 }
 
 void DIY::hello_world(){
 	//定义字符串变量和整数变量
 	string str;
-	int year;
 	//打印提示信息
-	cout<<"Please input an string and int number:\n";
+	cout<<"Please input an string:\n";
 	//从控制台获取用户输入
-	cin>>str>>year;
+	cin>>str;
 	//将数据输出到控制台
-	cout <<str<<year<< endl;
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	cout<<"Hello World!"<<str<<endl; // prints !!!Hello World!!!
 }

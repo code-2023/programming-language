@@ -1,0 +1,78 @@
+上传本地仓库到远程仓库的一般流程
+
+#首次在本机上使用git建立仓库前应生成公私钥(公钥上传到Github)
+ssh-keygen -t rsa -C "cristicwhite@outlook.com"
+#设置提交代码时的用户信息：
+git config --global user.name "xxx"
+git config --global user.email "xxx@outlook.com"
+#初始化本地仓库
+git init
+#添加当前目录下的所有文件到暂存区：
+git add .
+#提交到本地仓库并对本次提交进行备注
+git commit -m "xxxxx"
+#添加远程仓库地址(origin为它后面地址的别名)
+git remote add origin git@github.com:username/repositoryname
+#推送到远程仓库
+git push -u origin master
+--------------------------------------------------------------------------------
+#查看Git的配置信息
+git config --list
+#修改命令行输出显示unicode编码而不显示中文的命令(然后到终端选项文本-locale中更改字符集设置为utf8)
+git config --global core.quotepath false
+#查看远程仓库信息
+git remote -v
+#拷贝远程仓库到本地
+git clone https://github.com/szsc/graduation-project
+#查看某个远程仓库的详细信息
+git remote show  https://github.com/szsc/graduation-project
+#添加远程仓库地址
+git remote add origin git@github.com:username/repositoryname
+#删除远程仓库地址
+git remote rm origin
+--------------------------------------------------------------------------------
+#添加一个或多个文件到暂存区：
+git add [file1] [file2] ...
+#添加指定目录到暂存区，包括子目录：
+git add [dir]
+#查看暂存区的文件
+git ls-files
+#将文件从暂存区(staging area)和工作区(workspace)中删除
+git rm filename
+#将文件和目录从暂存区删除
+git rm --cached filename
+git rm -r --cached directoryname
+#有时需要添加强制删除选项 -f
+git rm -f filename
+#递归删除目录(删除所有子目录和文件)
+git rm –r directoryname
+#提交到本地仓库并备注信息
+git commit -m "xxx"
+#从本地仓库推送到远程仓库
+git push -u origin master
+#查看提交日志
+git log
+--------------------------------------------------------------------------------
+本地仓库操作
+#列出分支：
+git branch
+#创建分支：
+git branch branchname
+#切换分支:
+git checkout branchname
+#删除分支：
+git branch -d branchname
+#合并分支:
+git merge
+--------------------------------------------------------------------------------
+远程仓库操作
+#强制推送使用 --force 参数(推送/上传)
+git push --force origin master
+#删除远程仓库的分支使用 --delete 参数
+git push origin --delete branchname
+#拉取远程仓库到本地仓库(拉取远程的master分支到本地的当前分支)
+git pull origin master
+#允许版本历史不相关, 强制合并
+git pull origin master --allow-unrelated-histories
+#远程库与本地库不一致(拉取/下载)
+git pull --rebase origin master

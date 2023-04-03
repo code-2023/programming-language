@@ -11,5 +11,6 @@ str
 arr
 ascii
 &p
-&p
 stu
+const
+cout

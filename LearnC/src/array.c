@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
+void print_int_arr(int *num,int len);
 
 void int_array(){
 	int num[]={1,2,3,4};
