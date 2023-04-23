@@ -14,3 +14,6 @@ ascii
 stu
 const
 cout
+cpp
+endl
+std

@@ -8,8 +8,8 @@
 #ifndef CHEADER_H_
 #define CHEADER_H_
 
-//声明命名空间
-namespace DIY{
+//声明命名空间(包含一个类和一个函数)
+namespace diy{
 //	声明类
     class Student{
     //私有成员
@@ -27,6 +27,7 @@ namespace DIY{
         void set_score(int score);
         void query();
     };
+
 //	声明函数
     void hello_world();
 }
